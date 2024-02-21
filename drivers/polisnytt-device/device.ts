@@ -13,18 +13,25 @@ type PoliceEvent = {
 class PolisnyttApiDevice extends Homey.Device {
   newEventTriggerCard: Homey.FlowCardTriggerDevice | undefined = undefined
   cachedPoliceEvents: PoliceEvent[] | undefined = undefined
-  interval = 1000 * 60 * 5 // 5 minutes
+  // Every 5 seconds in debug mode, otherwise every 5 minutes
+  interval = process.env.DEBUG === '1' ? 5000 : 1000 * 60 * 5
   intervalId: NodeJS.Timeout | undefined = undefined
 
   setBadSettingsState() {
+    this.log('setBadSettingsState')
+
     this.setUnavailable(this.homey.__('settings.error'))
   }
 
   setGoodSettingsState() {
+    this.log('setGoodSettingsState')
+
     this.setAvailable()
   }
 
   getPrefs() {
+    this.log('getPrefs')
+
     const locations = this.getSettings() as Record<string, boolean>
 
     const selectedLocations = Object.keys(
@@ -37,6 +44,8 @@ class PolisnyttApiDevice extends Homey.Device {
   }
 
   validateSettings() {
+    this.log('validateSettings')
+
     const { locations } = this.getPrefs()
 
     if (!locations || locations.length === 0) {
@@ -47,6 +56,8 @@ class PolisnyttApiDevice extends Homey.Device {
   }
 
   getApiUrl() {
+    this.log('getApiUrl')
+
     const { locations } = this.getPrefs()
     const url = new URL('https://polisen.se/api/events')
 
@@ -58,7 +69,7 @@ class PolisnyttApiDevice extends Homey.Device {
   }
 
   getPoliceEvents = async () => {
-    console.log('getPoliceEvents')
+    this.log('getPoliceEvents')
 
     const url = this.getApiUrl()
 
@@ -75,7 +86,8 @@ class PolisnyttApiDevice extends Homey.Device {
   }
 
   runAndCheck = async () => {
-    console.log('runAndCheck')
+    this.log('runAndCheck')
+
     const hasValidSettings = this.validateSettings()
 
     if (!hasValidSettings) {
@@ -90,8 +102,6 @@ class PolisnyttApiDevice extends Homey.Device {
 
     // Trigger the flow card if there are new events
     if (lastFetchedEvent && lastFetchedEvent.id !== lastCachedEvent?.id) {
-      this.log('New event found', lastFetchedEvent)
-
       this.newEventTriggerCard
         ?.trigger(this, {
           datetime: lastFetchedEvent.datetime,
@@ -99,7 +109,6 @@ class PolisnyttApiDevice extends Homey.Device {
           summary: lastFetchedEvent.summary,
           type: lastFetchedEvent.type,
         })
-        .then((r) => this.log('newEventTriggerCard.trigger', r))
         .catch((err) => this.error('ERROR: newEventTriggerCard.trigger', err))
 
       this.cachedPoliceEvents = results
@@ -115,8 +124,6 @@ class PolisnyttApiDevice extends Homey.Device {
 
     await this.driver.ready()
 
-    this.log('PolisnyttApiDevice is ready')
-
     this.newEventTriggerCard = this.homey.flow.getDeviceTriggerCard('an-event-occured')
 
     const hasValidSettings = this.validateSettings()
@@ -126,7 +133,7 @@ class PolisnyttApiDevice extends Homey.Device {
     }
 
     // Kick off the first fetch and store it in cache
-    // this.cachedPoliceEvents = await this.getPoliceEvents()
+    this.cachedPoliceEvents = await this.getPoliceEvents()
 
     // Run every 5 minutes
     this.intervalId = this.homey.setInterval(() => {
@@ -145,6 +152,8 @@ class PolisnyttApiDevice extends Homey.Device {
     newSettings: { [key: string]: boolean | string | number | undefined | null }
     changedKeys: string[]
   }): Promise<string> {
+    this.log('PolisnyttApiDevice settings have been updated')
+
     const validLocations = Object.keys(Object.fromEntries(Object.entries(newSettings).filter(([_key, value]) => value)))
 
     if (validLocations.length === 0) {
