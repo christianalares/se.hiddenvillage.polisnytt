@@ -1,14 +1,16 @@
 [{
   "type": "group",
   "label": {
-    "en": "Locations"
+    "en": "Locations",
+    "sv": "Platser"
   },
   "children": [{
       "id": "Ale",
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ale"
+        "en": "Ale",
+        "sv": "Ale"
       }
     },
     {
@@ -16,7 +18,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Alingsås"
+        "en": "Alingsås",
+        "sv": "Alingsås"
       }
     },
     {
@@ -24,7 +27,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Älmhult"
+        "en": "Älmhult",
+        "sv": "Älmhult"
       }
     },
     {
@@ -32,7 +36,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Älvdalen"
+        "en": "Älvdalen",
+        "sv": "Älvdalen"
       }
     },
     {
@@ -40,7 +45,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Alvesta"
+        "en": "Alvesta",
+        "sv": "Alvesta"
       }
     },
     {
@@ -48,7 +54,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Älvkarleby"
+        "en": "Älvkarleby",
+        "sv": "Älvkarleby"
       }
     },
     {
@@ -56,7 +63,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Älvsbyn"
+        "en": "Älvsbyn",
+        "sv": "Älvsbyn"
       }
     },
     {
@@ -64,7 +72,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Åmål"
+        "en": "Åmål",
+        "sv": "Åmål"
       }
     },
     {
@@ -72,7 +81,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Aneby"
+        "en": "Aneby",
+        "sv": "Aneby"
       }
     },
     {
@@ -80,7 +90,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ånge"
+        "en": "Ånge",
+        "sv": "Ånge"
       }
     },
     {
@@ -88,7 +99,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ängelholm"
+        "en": "Ängelholm",
+        "sv": "Ängelholm"
       }
     },
     {
@@ -96,7 +108,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Arboga"
+        "en": "Arboga",
+        "sv": "Arboga"
       }
     },
     {
@@ -104,7 +117,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Åre"
+        "en": "Åre",
+        "sv": "Åre"
       }
     },
     {
@@ -112,7 +126,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Årjäng"
+        "en": "Årjäng",
+        "sv": "Årjäng"
       }
     },
     {
@@ -120,7 +135,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Arjeplog"
+        "en": "Arjeplog",
+        "sv": "Arjeplog"
       }
     },
     {
@@ -128,7 +144,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Arvidsjaur"
+        "en": "Arvidsjaur",
+        "sv": "Arvidsjaur"
       }
     },
     {
@@ -136,7 +153,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Arvika"
+        "en": "Arvika",
+        "sv": "Arvika"
       }
     },
     {
@@ -144,7 +162,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Åsele"
+        "en": "Åsele",
+        "sv": "Åsele"
       }
     },
     {
@@ -152,7 +171,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Askersund"
+        "en": "Askersund",
+        "sv": "Askersund"
       }
     },
     {
@@ -160,7 +180,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Åstorp"
+        "en": "Åstorp",
+        "sv": "Åstorp"
       }
     },
     {
@@ -168,7 +189,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Åtvidaberg"
+        "en": "Åtvidaberg",
+        "sv": "Åtvidaberg"
       }
     },
     {
@@ -176,7 +198,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Avesta"
+        "en": "Avesta",
+        "sv": "Avesta"
       }
     },
     {
@@ -184,7 +207,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Båstad"
+        "en": "Båstad",
+        "sv": "Båstad"
       }
     },
     {
@@ -192,7 +216,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Bengtsfors"
+        "en": "Bengtsfors",
+        "sv": "Bengtsfors"
       }
     },
     {
@@ -200,7 +225,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Berg"
+        "en": "Berg",
+        "sv": "Berg"
       }
     },
     {
@@ -208,7 +234,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Bjurholm"
+        "en": "Bjurholm",
+        "sv": "Bjurholm"
       }
     },
     {
@@ -216,7 +243,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Bjuv"
+        "en": "Bjuv",
+        "sv": "Bjuv"
       }
     },
     {
@@ -224,7 +252,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Blekinge län"
+        "en": "Blekinge län",
+        "sv": "Blekinge län"
       }
     },
     {
@@ -232,7 +261,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Boden"
+        "en": "Boden",
+        "sv": "Boden"
       }
     },
     {
@@ -240,7 +270,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Bollebygd"
+        "en": "Bollebygd",
+        "sv": "Bollebygd"
       }
     },
     {
@@ -248,7 +279,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Bollnäs"
+        "en": "Bollnäs",
+        "sv": "Bollnäs"
       }
     },
     {
@@ -256,7 +288,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Borås"
+        "en": "Borås",
+        "sv": "Borås"
       }
     },
     {
@@ -264,7 +297,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Borgholm"
+        "en": "Borgholm",
+        "sv": "Borgholm"
       }
     },
     {
@@ -272,7 +306,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Borlänge"
+        "en": "Borlänge",
+        "sv": "Borlänge"
       }
     },
     {
@@ -280,7 +315,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Botkyrka"
+        "en": "Botkyrka",
+        "sv": "Botkyrka"
       }
     },
     {
@@ -288,7 +324,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Boxholm"
+        "en": "Boxholm",
+        "sv": "Boxholm"
       }
     },
     {
@@ -296,7 +333,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Bräcke"
+        "en": "Bräcke",
+        "sv": "Bräcke"
       }
     },
     {
@@ -304,7 +342,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Bromölla"
+        "en": "Bromölla",
+        "sv": "Bromölla"
       }
     },
     {
@@ -312,7 +351,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Burlöv"
+        "en": "Burlöv",
+        "sv": "Burlöv"
       }
     },
     {
@@ -320,7 +360,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Dalarnas län"
+        "en": "Dalarnas län",
+        "sv": "Dalarnas län"
       }
     },
     {
@@ -328,7 +369,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Dals-ed"
+        "en": "Dals-ed",
+        "sv": "Dals-ed"
       }
     },
     {
@@ -336,7 +378,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Danderyd"
+        "en": "Danderyd",
+        "sv": "Danderyd"
       }
     },
     {
@@ -344,7 +387,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Degerfors"
+        "en": "Degerfors",
+        "sv": "Degerfors"
       }
     },
     {
@@ -352,7 +396,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Dorotea"
+        "en": "Dorotea",
+        "sv": "Dorotea"
       }
     },
     {
@@ -360,7 +405,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Eda"
+        "en": "Eda",
+        "sv": "Eda"
       }
     },
     {
@@ -368,7 +414,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ekerö"
+        "en": "Ekerö",
+        "sv": "Ekerö"
       }
     },
     {
@@ -376,7 +423,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Eksjö"
+        "en": "Eksjö",
+        "sv": "Eksjö"
       }
     },
     {
@@ -384,7 +432,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Emmaboda"
+        "en": "Emmaboda",
+        "sv": "Emmaboda"
       }
     },
     {
@@ -392,7 +441,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Enköping"
+        "en": "Enköping",
+        "sv": "Enköping"
       }
     },
     {
@@ -400,7 +450,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Eskilstuna"
+        "en": "Eskilstuna",
+        "sv": "Eskilstuna"
       }
     },
     {
@@ -408,7 +459,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Eslöv"
+        "en": "Eslöv",
+        "sv": "Eslöv"
       }
     },
     {
@@ -416,7 +468,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Essunga"
+        "en": "Essunga",
+        "sv": "Essunga"
       }
     },
     {
@@ -424,7 +477,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Fagersta"
+        "en": "Fagersta",
+        "sv": "Fagersta"
       }
     },
     {
@@ -432,7 +486,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Falkenberg"
+        "en": "Falkenberg",
+        "sv": "Falkenberg"
       }
     },
     {
@@ -440,7 +495,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Falköping"
+        "en": "Falköping",
+        "sv": "Falköping"
       }
     },
     {
@@ -448,7 +504,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Falun"
+        "en": "Falun",
+        "sv": "Falun"
       }
     },
     {
@@ -456,7 +513,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Färgelanda"
+        "en": "Färgelanda",
+        "sv": "Färgelanda"
       }
     },
     {
@@ -464,7 +522,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Filipstad"
+        "en": "Filipstad",
+        "sv": "Filipstad"
       }
     },
     {
@@ -472,7 +531,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Finspång"
+        "en": "Finspång",
+        "sv": "Finspång"
       }
     },
     {
@@ -480,7 +540,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Flen"
+        "en": "Flen",
+        "sv": "Flen"
       }
     },
     {
@@ -488,7 +549,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Forshaga"
+        "en": "Forshaga",
+        "sv": "Forshaga"
       }
     },
     {
@@ -496,7 +558,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gagnef"
+        "en": "Gagnef",
+        "sv": "Gagnef"
       }
     },
     {
@@ -504,7 +567,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gällivare"
+        "en": "Gällivare",
+        "sv": "Gällivare"
       }
     },
     {
@@ -512,7 +576,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gävle"
+        "en": "Gävle",
+        "sv": "Gävle"
       }
     },
     {
@@ -520,7 +585,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gävleborgs län"
+        "en": "Gävleborgs län",
+        "sv": "Gävleborgs län"
       }
     },
     {
@@ -528,7 +594,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gislaved"
+        "en": "Gislaved",
+        "sv": "Gislaved"
       }
     },
     {
@@ -536,7 +603,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gnesta"
+        "en": "Gnesta",
+        "sv": "Gnesta"
       }
     },
     {
@@ -544,7 +612,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gnosjö"
+        "en": "Gnosjö",
+        "sv": "Gnosjö"
       }
     },
     {
@@ -552,7 +621,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Göteborg"
+        "en": "Göteborg",
+        "sv": "Göteborg"
       }
     },
     {
@@ -560,7 +630,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Götene"
+        "en": "Götene",
+        "sv": "Götene"
       }
     },
     {
@@ -568,7 +639,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gotland"
+        "en": "Gotland",
+        "sv": "Gotland"
       }
     },
     {
@@ -576,7 +648,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gotlands län"
+        "en": "Gotlands län",
+        "sv": "Gotlands län"
       }
     },
     {
@@ -584,7 +657,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Grästorp"
+        "en": "Grästorp",
+        "sv": "Grästorp"
       }
     },
     {
@@ -592,7 +666,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Grums"
+        "en": "Grums",
+        "sv": "Grums"
       }
     },
     {
@@ -600,7 +675,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Gullspång"
+        "en": "Gullspång",
+        "sv": "Gullspång"
       }
     },
     {
@@ -608,7 +684,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Habo"
+        "en": "Habo",
+        "sv": "Habo"
       }
     },
     {
@@ -616,7 +693,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Håbo"
+        "en": "Håbo",
+        "sv": "Håbo"
       }
     },
     {
@@ -624,7 +702,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hagfors"
+        "en": "Hagfors",
+        "sv": "Hagfors"
       }
     },
     {
@@ -632,7 +711,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hallands län"
+        "en": "Hallands län",
+        "sv": "Hallands län"
       }
     },
     {
@@ -640,7 +720,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hällefors"
+        "en": "Hällefors",
+        "sv": "Hällefors"
       }
     },
     {
@@ -648,7 +729,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hallsberg"
+        "en": "Hallsberg",
+        "sv": "Hallsberg"
       }
     },
     {
@@ -656,7 +738,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hallstahammar"
+        "en": "Hallstahammar",
+        "sv": "Hallstahammar"
       }
     },
     {
@@ -664,7 +747,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Halmstad"
+        "en": "Halmstad",
+        "sv": "Halmstad"
       }
     },
     {
@@ -672,7 +756,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hammarö"
+        "en": "Hammarö",
+        "sv": "Hammarö"
       }
     },
     {
@@ -680,7 +765,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Haninge"
+        "en": "Haninge",
+        "sv": "Haninge"
       }
     },
     {
@@ -688,7 +774,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Haparanda"
+        "en": "Haparanda",
+        "sv": "Haparanda"
       }
     },
     {
@@ -696,7 +783,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Härjedalen"
+        "en": "Härjedalen",
+        "sv": "Härjedalen"
       }
     },
     {
@@ -704,7 +792,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Härnösand"
+        "en": "Härnösand",
+        "sv": "Härnösand"
       }
     },
     {
@@ -712,7 +801,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Härryda"
+        "en": "Härryda",
+        "sv": "Härryda"
       }
     },
     {
@@ -720,7 +810,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hässleholm"
+        "en": "Hässleholm",
+        "sv": "Hässleholm"
       }
     },
     {
@@ -728,7 +819,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Heby"
+        "en": "Heby",
+        "sv": "Heby"
       }
     },
     {
@@ -736,7 +828,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hedemora"
+        "en": "Hedemora",
+        "sv": "Hedemora"
       }
     },
     {
@@ -744,7 +837,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Helsingborg"
+        "en": "Helsingborg",
+        "sv": "Helsingborg"
       }
     },
     {
@@ -752,7 +846,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Herrljunga"
+        "en": "Herrljunga",
+        "sv": "Herrljunga"
       }
     },
     {
@@ -760,7 +855,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hjo"
+        "en": "Hjo",
+        "sv": "Hjo"
       }
     },
     {
@@ -768,7 +864,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hofors"
+        "en": "Hofors",
+        "sv": "Hofors"
       }
     },
     {
@@ -776,7 +873,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Höganäs"
+        "en": "Höganäs",
+        "sv": "Höganäs"
       }
     },
     {
@@ -784,7 +882,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Högsby"
+        "en": "Högsby",
+        "sv": "Högsby"
       }
     },
     {
@@ -792,7 +891,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Höör"
+        "en": "Höör",
+        "sv": "Höör"
       }
     },
     {
@@ -800,7 +900,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hörby"
+        "en": "Hörby",
+        "sv": "Hörby"
       }
     },
     {
@@ -808,7 +909,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Huddinge"
+        "en": "Huddinge",
+        "sv": "Huddinge"
       }
     },
     {
@@ -816,7 +918,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hudiksvall"
+        "en": "Hudiksvall",
+        "sv": "Hudiksvall"
       }
     },
     {
@@ -824,7 +927,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hultsfred"
+        "en": "Hultsfred",
+        "sv": "Hultsfred"
       }
     },
     {
@@ -832,7 +936,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Hylte"
+        "en": "Hylte",
+        "sv": "Hylte"
       }
     },
     {
@@ -840,7 +945,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Jämtlands län"
+        "en": "Jämtlands län",
+        "sv": "Jämtlands län"
       }
     },
     {
@@ -848,7 +954,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Järfälla"
+        "en": "Järfälla",
+        "sv": "Järfälla"
       }
     },
     {
@@ -856,7 +963,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Jokkmokk"
+        "en": "Jokkmokk",
+        "sv": "Jokkmokk"
       }
     },
     {
@@ -864,7 +972,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Jönköping"
+        "en": "Jönköping",
+        "sv": "Jönköping"
       }
     },
     {
@@ -872,7 +981,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Jönköpings län"
+        "en": "Jönköpings län",
+        "sv": "Jönköpings län"
       }
     },
     {
@@ -880,7 +990,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kalix"
+        "en": "Kalix",
+        "sv": "Kalix"
       }
     },
     {
@@ -888,7 +999,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kalmar"
+        "en": "Kalmar",
+        "sv": "Kalmar"
       }
     },
     {
@@ -896,7 +1008,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kalmar län"
+        "en": "Kalmar län",
+        "sv": "Kalmar län"
       }
     },
     {
@@ -904,7 +1017,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Karlsborg"
+        "en": "Karlsborg",
+        "sv": "Karlsborg"
       }
     },
     {
@@ -912,7 +1026,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Karlshamn"
+        "en": "Karlshamn",
+        "sv": "Karlshamn"
       }
     },
     {
@@ -920,7 +1035,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Karlskoga"
+        "en": "Karlskoga",
+        "sv": "Karlskoga"
       }
     },
     {
@@ -928,7 +1044,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Karlskrona"
+        "en": "Karlskrona",
+        "sv": "Karlskrona"
       }
     },
     {
@@ -936,7 +1053,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Karlstad"
+        "en": "Karlstad",
+        "sv": "Karlstad"
       }
     },
     {
@@ -944,7 +1062,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Katrineholm"
+        "en": "Katrineholm",
+        "sv": "Katrineholm"
       }
     },
     {
@@ -952,7 +1071,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kävlinge"
+        "en": "Kävlinge",
+        "sv": "Kävlinge"
       }
     },
     {
@@ -960,7 +1080,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kil"
+        "en": "Kil",
+        "sv": "Kil"
       }
     },
     {
@@ -968,7 +1089,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kinda"
+        "en": "Kinda",
+        "sv": "Kinda"
       }
     },
     {
@@ -976,7 +1098,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kiruna"
+        "en": "Kiruna",
+        "sv": "Kiruna"
       }
     },
     {
@@ -984,7 +1107,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Klippan"
+        "en": "Klippan",
+        "sv": "Klippan"
       }
     },
     {
@@ -992,7 +1116,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Knivsta"
+        "en": "Knivsta",
+        "sv": "Knivsta"
       }
     },
     {
@@ -1000,7 +1125,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Köping"
+        "en": "Köping",
+        "sv": "Köping"
       }
     },
     {
@@ -1008,7 +1134,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kramfors"
+        "en": "Kramfors",
+        "sv": "Kramfors"
       }
     },
     {
@@ -1016,7 +1143,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kristianstad"
+        "en": "Kristianstad",
+        "sv": "Kristianstad"
       }
     },
     {
@@ -1024,7 +1152,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kristinehamn"
+        "en": "Kristinehamn",
+        "sv": "Kristinehamn"
       }
     },
     {
@@ -1032,7 +1161,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Krokom"
+        "en": "Krokom",
+        "sv": "Krokom"
       }
     },
     {
@@ -1040,7 +1170,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kronobergs län"
+        "en": "Kronobergs län",
+        "sv": "Kronobergs län"
       }
     },
     {
@@ -1048,7 +1179,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kumla"
+        "en": "Kumla",
+        "sv": "Kumla"
       }
     },
     {
@@ -1056,7 +1188,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kungälv"
+        "en": "Kungälv",
+        "sv": "Kungälv"
       }
     },
     {
@@ -1064,7 +1197,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kungsbacka"
+        "en": "Kungsbacka",
+        "sv": "Kungsbacka"
       }
     },
     {
@@ -1072,7 +1206,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Kungsör"
+        "en": "Kungsör",
+        "sv": "Kungsör"
       }
     },
     {
@@ -1080,7 +1215,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Laholm"
+        "en": "Laholm",
+        "sv": "Laholm"
       }
     },
     {
@@ -1088,7 +1224,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Landskrona"
+        "en": "Landskrona",
+        "sv": "Landskrona"
       }
     },
     {
@@ -1096,7 +1233,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Laxå"
+        "en": "Laxå",
+        "sv": "Laxå"
       }
     },
     {
@@ -1104,7 +1242,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lekeberg"
+        "en": "Lekeberg",
+        "sv": "Lekeberg"
       }
     },
     {
@@ -1112,7 +1251,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Leksand"
+        "en": "Leksand",
+        "sv": "Leksand"
       }
     },
     {
@@ -1120,7 +1260,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lerum"
+        "en": "Lerum",
+        "sv": "Lerum"
       }
     },
     {
@@ -1128,7 +1269,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lessebo"
+        "en": "Lessebo",
+        "sv": "Lessebo"
       }
     },
     {
@@ -1136,7 +1278,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lidingö"
+        "en": "Lidingö",
+        "sv": "Lidingö"
       }
     },
     {
@@ -1144,7 +1287,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lidköping"
+        "en": "Lidköping",
+        "sv": "Lidköping"
       }
     },
     {
@@ -1152,7 +1296,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lilla edet"
+        "en": "Lilla edet",
+        "sv": "Lilla edet"
       }
     },
     {
@@ -1160,7 +1305,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lindesberg"
+        "en": "Lindesberg",
+        "sv": "Lindesberg"
       }
     },
     {
@@ -1168,7 +1314,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Linköping"
+        "en": "Linköping",
+        "sv": "Linköping"
       }
     },
     {
@@ -1176,7 +1323,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ljungby"
+        "en": "Ljungby",
+        "sv": "Ljungby"
       }
     },
     {
@@ -1184,7 +1332,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ljusdal"
+        "en": "Ljusdal",
+        "sv": "Ljusdal"
       }
     },
     {
@@ -1192,7 +1341,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ljusnarsberg"
+        "en": "Ljusnarsberg",
+        "sv": "Ljusnarsberg"
       }
     },
     {
@@ -1200,7 +1350,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lomma"
+        "en": "Lomma",
+        "sv": "Lomma"
       }
     },
     {
@@ -1208,7 +1359,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ludvika"
+        "en": "Ludvika",
+        "sv": "Ludvika"
       }
     },
     {
@@ -1216,7 +1368,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Luleå"
+        "en": "Luleå",
+        "sv": "Luleå"
       }
     },
     {
@@ -1224,7 +1377,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lund"
+        "en": "Lund",
+        "sv": "Lund"
       }
     },
     {
@@ -1232,7 +1386,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lycksele"
+        "en": "Lycksele",
+        "sv": "Lycksele"
       }
     },
     {
@@ -1240,7 +1395,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Lysekil"
+        "en": "Lysekil",
+        "sv": "Lysekil"
       }
     },
     {
@@ -1248,7 +1404,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Malå"
+        "en": "Malå",
+        "sv": "Malå"
       }
     },
     {
@@ -1256,7 +1413,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Malmö"
+        "en": "Malmö",
+        "sv": "Malmö"
       }
     },
     {
@@ -1264,7 +1422,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Malung-Sälen"
+        "en": "Malung-Sälen",
+        "sv": "Malung-Sälen"
       }
     },
     {
@@ -1272,7 +1431,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mariestad"
+        "en": "Mariestad",
+        "sv": "Mariestad"
       }
     },
     {
@@ -1280,7 +1440,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mark"
+        "en": "Mark",
+        "sv": "Mark"
       }
     },
     {
@@ -1288,7 +1449,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Markaryd"
+        "en": "Markaryd",
+        "sv": "Markaryd"
       }
     },
     {
@@ -1296,7 +1458,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mellerud"
+        "en": "Mellerud",
+        "sv": "Mellerud"
       }
     },
     {
@@ -1304,7 +1467,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mjölby"
+        "en": "Mjölby",
+        "sv": "Mjölby"
       }
     },
     {
@@ -1312,7 +1476,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mölndal"
+        "en": "Mölndal",
+        "sv": "Mölndal"
       }
     },
     {
@@ -1320,7 +1485,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mönsterås"
+        "en": "Mönsterås",
+        "sv": "Mönsterås"
       }
     },
     {
@@ -1328,7 +1494,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mora"
+        "en": "Mora",
+        "sv": "Mora"
       }
     },
     {
@@ -1336,7 +1503,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mörbylånga"
+        "en": "Mörbylånga",
+        "sv": "Mörbylånga"
       }
     },
     {
@@ -1344,7 +1512,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Motala"
+        "en": "Motala",
+        "sv": "Motala"
       }
     },
     {
@@ -1352,7 +1521,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Mullsjö"
+        "en": "Mullsjö",
+        "sv": "Mullsjö"
       }
     },
     {
@@ -1360,7 +1530,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Munkedal"
+        "en": "Munkedal",
+        "sv": "Munkedal"
       }
     },
     {
@@ -1368,7 +1539,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Munkfors"
+        "en": "Munkfors",
+        "sv": "Munkfors"
       }
     },
     {
@@ -1376,7 +1548,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nacka"
+        "en": "Nacka",
+        "sv": "Nacka"
       }
     },
     {
@@ -1384,7 +1557,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nässjö"
+        "en": "Nässjö",
+        "sv": "Nässjö"
       }
     },
     {
@@ -1392,7 +1566,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nora"
+        "en": "Nora",
+        "sv": "Nora"
       }
     },
     {
@@ -1400,7 +1575,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Norberg"
+        "en": "Norberg",
+        "sv": "Norberg"
       }
     },
     {
@@ -1408,7 +1584,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nordanstig"
+        "en": "Nordanstig",
+        "sv": "Nordanstig"
       }
     },
     {
@@ -1416,7 +1593,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nordmaling"
+        "en": "Nordmaling",
+        "sv": "Nordmaling"
       }
     },
     {
@@ -1424,7 +1602,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Norrbottens län"
+        "en": "Norrbottens län",
+        "sv": "Norrbottens län"
       }
     },
     {
@@ -1432,7 +1611,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Norrköping"
+        "en": "Norrköping",
+        "sv": "Norrköping"
       }
     },
     {
@@ -1440,7 +1620,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Norrtälje"
+        "en": "Norrtälje",
+        "sv": "Norrtälje"
       }
     },
     {
@@ -1448,7 +1629,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Norsjö"
+        "en": "Norsjö",
+        "sv": "Norsjö"
       }
     },
     {
@@ -1456,7 +1638,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nybro"
+        "en": "Nybro",
+        "sv": "Nybro"
       }
     },
     {
@@ -1464,7 +1647,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nyköping"
+        "en": "Nyköping",
+        "sv": "Nyköping"
       }
     },
     {
@@ -1472,7 +1656,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nykvarn"
+        "en": "Nykvarn",
+        "sv": "Nykvarn"
       }
     },
     {
@@ -1480,7 +1665,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Nynäshamn"
+        "en": "Nynäshamn",
+        "sv": "Nynäshamn"
       }
     },
     {
@@ -1488,7 +1674,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ockelbo"
+        "en": "Ockelbo",
+        "sv": "Ockelbo"
       }
     },
     {
@@ -1496,7 +1683,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Öckerö"
+        "en": "Öckerö",
+        "sv": "Öckerö"
       }
     },
     {
@@ -1504,7 +1692,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ödeshög"
+        "en": "Ödeshög",
+        "sv": "Ödeshög"
       }
     },
     {
@@ -1512,7 +1701,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Olofström"
+        "en": "Olofström",
+        "sv": "Olofström"
       }
     },
     {
@@ -1520,7 +1710,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Örebro"
+        "en": "Örebro",
+        "sv": "Örebro"
       }
     },
     {
@@ -1528,7 +1719,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Örebro län"
+        "en": "Örebro län",
+        "sv": "Örebro län"
       }
     },
     {
@@ -1536,7 +1728,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Örkelljunga"
+        "en": "Örkelljunga",
+        "sv": "Örkelljunga"
       }
     },
     {
@@ -1544,7 +1737,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Örnsköldsvik"
+        "en": "Örnsköldsvik",
+        "sv": "Örnsköldsvik"
       }
     },
     {
@@ -1552,7 +1746,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Orsa"
+        "en": "Orsa",
+        "sv": "Orsa"
       }
     },
     {
@@ -1560,7 +1755,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Orust"
+        "en": "Orust",
+        "sv": "Orust"
       }
     },
     {
@@ -1568,7 +1764,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Osby"
+        "en": "Osby",
+        "sv": "Osby"
       }
     },
     {
@@ -1576,7 +1773,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Oskarshamn"
+        "en": "Oskarshamn",
+        "sv": "Oskarshamn"
       }
     },
     {
@@ -1584,7 +1782,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Österåker"
+        "en": "Österåker",
+        "sv": "Österåker"
       }
     },
     {
@@ -1592,7 +1791,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Östergötlands län"
+        "en": "Östergötlands län",
+        "sv": "Östergötlands län"
       }
     },
     {
@@ -1600,7 +1800,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Östersund"
+        "en": "Östersund",
+        "sv": "Östersund"
       }
     },
     {
@@ -1608,7 +1809,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Östhammar"
+        "en": "Östhammar",
+        "sv": "Östhammar"
       }
     },
     {
@@ -1616,7 +1818,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Östra göinge"
+        "en": "Östra göinge",
+        "sv": "Östra göinge"
       }
     },
     {
@@ -1624,7 +1827,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ovanåker"
+        "en": "Ovanåker",
+        "sv": "Ovanåker"
       }
     },
     {
@@ -1632,7 +1836,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Överkalix"
+        "en": "Överkalix",
+        "sv": "Överkalix"
       }
     },
     {
@@ -1640,7 +1845,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Övertorneå"
+        "en": "Övertorneå",
+        "sv": "Övertorneå"
       }
     },
     {
@@ -1648,7 +1854,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Oxelösund"
+        "en": "Oxelösund",
+        "sv": "Oxelösund"
       }
     },
     {
@@ -1656,7 +1863,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Pajala"
+        "en": "Pajala",
+        "sv": "Pajala"
       }
     },
     {
@@ -1664,7 +1872,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Partille"
+        "en": "Partille",
+        "sv": "Partille"
       }
     },
     {
@@ -1672,7 +1881,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Perstorp"
+        "en": "Perstorp",
+        "sv": "Perstorp"
       }
     },
     {
@@ -1680,7 +1890,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Piteå"
+        "en": "Piteå",
+        "sv": "Piteå"
       }
     },
     {
@@ -1688,7 +1899,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ragunda"
+        "en": "Ragunda",
+        "sv": "Ragunda"
       }
     },
     {
@@ -1696,7 +1908,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Rättvik"
+        "en": "Rättvik",
+        "sv": "Rättvik"
       }
     },
     {
@@ -1704,7 +1917,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Robertsfors"
+        "en": "Robertsfors",
+        "sv": "Robertsfors"
       }
     },
     {
@@ -1712,7 +1926,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ronneby"
+        "en": "Ronneby",
+        "sv": "Ronneby"
       }
     },
     {
@@ -1720,7 +1935,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Säffle"
+        "en": "Säffle",
+        "sv": "Säffle"
       }
     },
     {
@@ -1728,7 +1944,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sala"
+        "en": "Sala",
+        "sv": "Sala"
       }
     },
     {
@@ -1736,7 +1953,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Salem"
+        "en": "Salem",
+        "sv": "Salem"
       }
     },
     {
@@ -1744,7 +1962,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sandviken"
+        "en": "Sandviken",
+        "sv": "Sandviken"
       }
     },
     {
@@ -1752,7 +1971,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Säter"
+        "en": "Säter",
+        "sv": "Säter"
       }
     },
     {
@@ -1760,7 +1980,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sävsjö"
+        "en": "Sävsjö",
+        "sv": "Sävsjö"
       }
     },
     {
@@ -1768,7 +1989,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sigtuna"
+        "en": "Sigtuna",
+        "sv": "Sigtuna"
       }
     },
     {
@@ -1776,7 +1998,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Simrishamn"
+        "en": "Simrishamn",
+        "sv": "Simrishamn"
       }
     },
     {
@@ -1784,7 +2007,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sjöbo"
+        "en": "Sjöbo",
+        "sv": "Sjöbo"
       }
     },
     {
@@ -1792,7 +2016,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Skåne län"
+        "en": "Skåne län",
+        "sv": "Skåne län"
       }
     },
     {
@@ -1800,7 +2025,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Skara"
+        "en": "Skara",
+        "sv": "Skara"
       }
     },
     {
@@ -1808,7 +2034,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Skellefteå"
+        "en": "Skellefteå",
+        "sv": "Skellefteå"
       }
     },
     {
@@ -1816,7 +2043,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Skinnskatteberg"
+        "en": "Skinnskatteberg",
+        "sv": "Skinnskatteberg"
       }
     },
     {
@@ -1824,7 +2052,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Skövde"
+        "en": "Skövde",
+        "sv": "Skövde"
       }
     },
     {
@@ -1832,7 +2061,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Skurup"
+        "en": "Skurup",
+        "sv": "Skurup"
       }
     },
     {
@@ -1840,7 +2070,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Smedjebacken"
+        "en": "Smedjebacken",
+        "sv": "Smedjebacken"
       }
     },
     {
@@ -1848,7 +2079,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Söderhamn"
+        "en": "Söderhamn",
+        "sv": "Söderhamn"
       }
     },
     {
@@ -1856,7 +2088,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Söderköping"
+        "en": "Söderköping",
+        "sv": "Söderköping"
       }
     },
     {
@@ -1864,7 +2097,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Södermanlands län"
+        "en": "Södermanlands län",
+        "sv": "Södermanlands län"
       }
     },
     {
@@ -1872,7 +2106,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Södertälje"
+        "en": "Södertälje",
+        "sv": "Södertälje"
       }
     },
     {
@@ -1880,7 +2115,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sollefteå"
+        "en": "Sollefteå",
+        "sv": "Sollefteå"
       }
     },
     {
@@ -1888,7 +2124,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sollentuna"
+        "en": "Sollentuna",
+        "sv": "Sollentuna"
       }
     },
     {
@@ -1896,7 +2133,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Solna"
+        "en": "Solna",
+        "sv": "Solna"
       }
     },
     {
@@ -1904,7 +2142,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sölvesborg"
+        "en": "Sölvesborg",
+        "sv": "Sölvesborg"
       }
     },
     {
@@ -1912,7 +2151,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sorsele"
+        "en": "Sorsele",
+        "sv": "Sorsele"
       }
     },
     {
@@ -1920,7 +2160,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sotenäs"
+        "en": "Sotenäs",
+        "sv": "Sotenäs"
       }
     },
     {
@@ -1928,7 +2169,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Staffanstorp"
+        "en": "Staffanstorp",
+        "sv": "Staffanstorp"
       }
     },
     {
@@ -1936,7 +2178,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Stenungsund"
+        "en": "Stenungsund",
+        "sv": "Stenungsund"
       }
     },
     {
@@ -1944,7 +2187,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Stockholm"
+        "en": "Stockholm",
+        "sv": "Stockholm"
       }
     },
     {
@@ -1952,7 +2196,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Stockholms län"
+        "en": "Stockholms län",
+        "sv": "Stockholms län"
       }
     },
     {
@@ -1960,7 +2205,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Storfors"
+        "en": "Storfors",
+        "sv": "Storfors"
       }
     },
     {
@@ -1968,7 +2214,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Storuman"
+        "en": "Storuman",
+        "sv": "Storuman"
       }
     },
     {
@@ -1976,7 +2223,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Strängnäs"
+        "en": "Strängnäs",
+        "sv": "Strängnäs"
       }
     },
     {
@@ -1984,7 +2232,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Strömstad"
+        "en": "Strömstad",
+        "sv": "Strömstad"
       }
     },
     {
@@ -1992,7 +2241,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Strömsund"
+        "en": "Strömsund",
+        "sv": "Strömsund"
       }
     },
     {
@@ -2000,7 +2250,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sundbyberg"
+        "en": "Sundbyberg",
+        "sv": "Sundbyberg"
       }
     },
     {
@@ -2008,7 +2259,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sundsvall"
+        "en": "Sundsvall",
+        "sv": "Sundsvall"
       }
     },
     {
@@ -2016,7 +2268,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Sunne"
+        "en": "Sunne",
+        "sv": "Sunne"
       }
     },
     {
@@ -2024,7 +2277,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Surahammar"
+        "en": "Surahammar",
+        "sv": "Surahammar"
       }
     },
     {
@@ -2032,7 +2286,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Svalöv"
+        "en": "Svalöv",
+        "sv": "Svalöv"
       }
     },
     {
@@ -2040,7 +2295,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Svedala"
+        "en": "Svedala",
+        "sv": "Svedala"
       }
     },
     {
@@ -2048,7 +2304,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Svenljunga"
+        "en": "Svenljunga",
+        "sv": "Svenljunga"
       }
     },
     {
@@ -2056,7 +2313,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Täby"
+        "en": "Täby",
+        "sv": "Täby"
       }
     },
     {
@@ -2064,7 +2322,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tanum"
+        "en": "Tanum",
+        "sv": "Tanum"
       }
     },
     {
@@ -2072,7 +2331,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tibro"
+        "en": "Tibro",
+        "sv": "Tibro"
       }
     },
     {
@@ -2080,7 +2340,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tidaholm"
+        "en": "Tidaholm",
+        "sv": "Tidaholm"
       }
     },
     {
@@ -2088,7 +2349,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tierp"
+        "en": "Tierp",
+        "sv": "Tierp"
       }
     },
     {
@@ -2096,7 +2358,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Timrå"
+        "en": "Timrå",
+        "sv": "Timrå"
       }
     },
     {
@@ -2104,7 +2367,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tingsryd"
+        "en": "Tingsryd",
+        "sv": "Tingsryd"
       }
     },
     {
@@ -2112,7 +2376,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tjörn"
+        "en": "Tjörn",
+        "sv": "Tjörn"
       }
     },
     {
@@ -2120,7 +2385,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tomelilla"
+        "en": "Tomelilla",
+        "sv": "Tomelilla"
       }
     },
     {
@@ -2128,7 +2394,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Töreboda"
+        "en": "Töreboda",
+        "sv": "Töreboda"
       }
     },
     {
@@ -2136,7 +2403,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Torsås"
+        "en": "Torsås",
+        "sv": "Torsås"
       }
     },
     {
@@ -2144,7 +2412,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Torsby"
+        "en": "Torsby",
+        "sv": "Torsby"
       }
     },
     {
@@ -2152,7 +2421,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tranås"
+        "en": "Tranås",
+        "sv": "Tranås"
       }
     },
     {
@@ -2160,7 +2430,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tranemo"
+        "en": "Tranemo",
+        "sv": "Tranemo"
       }
     },
     {
@@ -2168,7 +2439,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Trelleborg"
+        "en": "Trelleborg",
+        "sv": "Trelleborg"
       }
     },
     {
@@ -2176,7 +2448,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Trollhättan"
+        "en": "Trollhättan",
+        "sv": "Trollhättan"
       }
     },
     {
@@ -2184,7 +2457,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Trosa"
+        "en": "Trosa",
+        "sv": "Trosa"
       }
     },
     {
@@ -2192,7 +2466,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Tyresö"
+        "en": "Tyresö",
+        "sv": "Tyresö"
       }
     },
     {
@@ -2200,7 +2475,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Uddevalla"
+        "en": "Uddevalla",
+        "sv": "Uddevalla"
       }
     },
     {
@@ -2208,7 +2484,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ulricehamn"
+        "en": "Ulricehamn",
+        "sv": "Ulricehamn"
       }
     },
     {
@@ -2216,7 +2493,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Umeå"
+        "en": "Umeå",
+        "sv": "Umeå"
       }
     },
     {
@@ -2224,7 +2502,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Upplands väsby"
+        "en": "Upplands väsby",
+        "sv": "Upplands väsby"
       }
     },
     {
@@ -2232,7 +2511,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Upplands-bro"
+        "en": "Upplands-bro",
+        "sv": "Upplands-bro"
       }
     },
     {
@@ -2240,7 +2520,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Uppsala"
+        "en": "Uppsala",
+        "sv": "Uppsala"
       }
     },
     {
@@ -2248,7 +2529,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Uppsala län"
+        "en": "Uppsala län",
+        "sv": "Uppsala län"
       }
     },
     {
@@ -2256,7 +2538,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Uppvidinge"
+        "en": "Uppvidinge",
+        "sv": "Uppvidinge"
       }
     },
     {
@@ -2264,7 +2547,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vadstena"
+        "en": "Vadstena",
+        "sv": "Vadstena"
       }
     },
     {
@@ -2272,7 +2556,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vaggeryd"
+        "en": "Vaggeryd",
+        "sv": "Vaggeryd"
       }
     },
     {
@@ -2280,7 +2565,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Valdemarsvik"
+        "en": "Valdemarsvik",
+        "sv": "Valdemarsvik"
       }
     },
     {
@@ -2288,7 +2574,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vallentuna"
+        "en": "Vallentuna",
+        "sv": "Vallentuna"
       }
     },
     {
@@ -2296,7 +2583,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vänersborg"
+        "en": "Vänersborg",
+        "sv": "Vänersborg"
       }
     },
     {
@@ -2304,7 +2592,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vännäs"
+        "en": "Vännäs",
+        "sv": "Vännäs"
       }
     },
     {
@@ -2312,7 +2601,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vansbro"
+        "en": "Vansbro",
+        "sv": "Vansbro"
       }
     },
     {
@@ -2320,7 +2610,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vara"
+        "en": "Vara",
+        "sv": "Vara"
       }
     },
     {
@@ -2328,7 +2619,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Varberg"
+        "en": "Varberg",
+        "sv": "Varberg"
       }
     },
     {
@@ -2336,7 +2628,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vårgårda"
+        "en": "Vårgårda",
+        "sv": "Vårgårda"
       }
     },
     {
@@ -2344,7 +2637,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Värmdö"
+        "en": "Värmdö",
+        "sv": "Värmdö"
       }
     },
     {
@@ -2352,7 +2646,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Värmlands län"
+        "en": "Värmlands län",
+        "sv": "Värmlands län"
       }
     },
     {
@@ -2360,7 +2655,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Värnamo"
+        "en": "Värnamo",
+        "sv": "Värnamo"
       }
     },
     {
@@ -2368,7 +2664,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Västerås"
+        "en": "Västerås",
+        "sv": "Västerås"
       }
     },
     {
@@ -2376,7 +2673,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Västerbottens län"
+        "en": "Västerbottens län",
+        "sv": "Västerbottens län"
       }
     },
     {
@@ -2384,7 +2682,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Västernorrlands län"
+        "en": "Västernorrlands län",
+        "sv": "Västernorrlands län"
       }
     },
     {
@@ -2392,7 +2691,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Västervik"
+        "en": "Västervik",
+        "sv": "Västervik"
       }
     },
     {
@@ -2400,7 +2700,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Västmanlands län"
+        "en": "Västmanlands län",
+        "sv": "Västmanlands län"
       }
     },
     {
@@ -2408,7 +2709,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Västra Götalands län"
+        "en": "Västra Götalands län",
+        "sv": "Västra Götalands län"
       }
     },
     {
@@ -2416,7 +2718,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vaxholm"
+        "en": "Vaxholm",
+        "sv": "Vaxholm"
       }
     },
     {
@@ -2424,7 +2727,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Växjö"
+        "en": "Växjö",
+        "sv": "Växjö"
       }
     },
     {
@@ -2432,7 +2736,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vellinge"
+        "en": "Vellinge",
+        "sv": "Vellinge"
       }
     },
     {
@@ -2440,7 +2745,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vetlanda"
+        "en": "Vetlanda",
+        "sv": "Vetlanda"
       }
     },
     {
@@ -2448,7 +2754,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vilhelmina"
+        "en": "Vilhelmina",
+        "sv": "Vilhelmina"
       }
     },
     {
@@ -2456,7 +2763,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vimmerby"
+        "en": "Vimmerby",
+        "sv": "Vimmerby"
       }
     },
     {
@@ -2464,7 +2772,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vindeln"
+        "en": "Vindeln",
+        "sv": "Vindeln"
       }
     },
     {
@@ -2472,7 +2781,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Vingåker"
+        "en": "Vingåker",
+        "sv": "Vingåker"
       }
     },
     {
@@ -2480,7 +2790,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ydre"
+        "en": "Ydre",
+        "sv": "Ydre"
       }
     },
     {
@@ -2488,7 +2799,8 @@
       "type": "checkbox",
       "value": false,
       "label": {
-        "en": "Ystad"
+        "en": "Ystad",
+        "sv": "Ystad"
       }
     }
   ]

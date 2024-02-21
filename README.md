@@ -1,3 +1,3 @@
 # Polisnytt
 
-Gets information about recent events from the Swedish Police
+Få senaste händelser från Polisen

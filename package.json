@@ -2,6 +2,7 @@
   "name": "se.hiddenvillage.polisnytt",
   "version": "0.0.1",
   "main": "app.ts",
+  "repository": "https://github.com/christianalares/se.hiddenvillage.polisnytt",
   "scripts": {
     "build": "tsc",
     "lint": "biome check .",

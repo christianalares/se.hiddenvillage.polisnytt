@@ -3,47 +3,56 @@
     {
       "id": "an-event-occured",
       "title": {
-        "en": "An event occured"
+        "en": "An event occured",
+        "sv": "En händelse inträffade"
       },
       "tokens": [
         {
           "type": "string",
           "name": "datetime",
           "title": {
-            "en": "Date"
+            "en": "Date",
+            "sv": "Datum"
           },
           "example": {
-            "en": "2024-02-20 16:01:49 +01:00"
+            "en": "2024-02-20 10:41:41 +01:00",
+            "sv": "2024-02-20 10:41:41 +01:00"
           }
         },
         {
           "type": "string",
           "name": "name",
           "title": {
-            "en": "Name"
+            "en": "Name",
+            "sv": "Namn"
           },
           "example": {
-            "en": "20 februari 14.14, Brand, Timrå"
+            "en": "20 februari 08.40, Trafikbrott, Stockholm",
+            "sv": "20 februari 08.40, Trafikbrott, Stockholm"
           }
         },
         {
           "type": "string",
           "name": "summary",
           "title": {
-            "en": "Summary"
+            "en": "Summary",
+            "sv": "Sammanfattning"
           },
           "example": {
-            "en": "Trafikolycka på Södermalm."
+            "en": "Trafikolycka på Södermalm.",
+            "sv": "Trafikolycka på Södermalm."
           }
         },
         {
           "type": "string",
           "name": "type",
           "title": {
-            "en": "Type"
+            "en": "Type",
+            "sv": "Typ"
           },
           "example": {
-            "en": "Trafikbrott"
+            "en": "Trafikbrott",
+            "sv": "Trafikbrott"
           }
         }
       ]

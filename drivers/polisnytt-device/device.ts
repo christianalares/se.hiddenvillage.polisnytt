@@ -17,7 +17,7 @@ class PolisnyttApiDevice extends Homey.Device {
   intervalId: NodeJS.Timeout | undefined = undefined
 
   setBadSettingsState() {
-    this.setUnavailable('No locations selected in settings')
+    this.setUnavailable(this.homey.__('settings.error'))
   }
 
   setGoodSettingsState() {
@@ -90,8 +90,6 @@ class PolisnyttApiDevice extends Homey.Device {
 
     // Trigger the flow card if there are new events
     if (lastFetchedEvent && lastFetchedEvent.id !== lastCachedEvent?.id) {
-      // const triggerCard = this.homey.flow.getTriggerCard('an-event-occured')
-
       this.log('New event found', lastFetchedEvent)
 
       this.newEventTriggerCard
@@ -151,12 +149,12 @@ class PolisnyttApiDevice extends Homey.Device {
 
     if (validLocations.length === 0) {
       this.setBadSettingsState()
-      return 'Settings saved. Note that you need at least one location selected'
+      return this.homey.__('settings.savedEmpty')
     }
 
     this.setGoodSettingsState()
 
-    return 'Settings updated'
+    return this.homey.__('settings.savedOk')
   }
 
   async onRenamed(name: string) {

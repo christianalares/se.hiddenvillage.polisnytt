@@ -1,1 +1,7 @@
-{}
+{
+  "settings": {
+    "error": "No locations selected in settings",
+    "savedOk": "Settings updated.",
+    "savedEmpty": "Settings saved. Note that you need at least one location selected."
+  }
+}

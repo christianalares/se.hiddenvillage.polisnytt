@@ -1,0 +1,7 @@
+{
+  "settings": {
+    "error": "Inga platser sparade i inställningar",
+    "savedOk": "Inställningar uppdaterade.",
+    "savedEmpty": "Inställningar uppdaterade. Observera att du behöver minst en plats sparad."
+  }
+}

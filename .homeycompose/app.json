@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "compatibility": ">=5.0.0",
   "sdk": 3,
+  "bugs": {
+    "url": "https://github.com/christianalares/se.hiddenvillage.polisnytt/issues"
+  },
+  "source": "https://github.com/christianalares/se.hiddenvillage.polisnytt",
   "brandColor": "#1762a8",
   "platforms": ["local", "cloud"],
   "name": {
@@ -10,7 +14,8 @@
     "sv": "Polisnytt"
   },
   "description": {
-    "en": "Gets information about recent events from the Swedish Police"
+    "en": "Get recent events from the Swedish Police",
+    "sv": "Få senaste händelser från Polisen"
   },
   "category": ["internet"],
   "permissions": [],
