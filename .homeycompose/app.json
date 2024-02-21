@@ -9,7 +9,7 @@
   "support": "https://github.com/christianalares/se.hiddenvillage.polisnytt",
   "source": "https://github.com/christianalares/se.hiddenvillage.polisnytt",
   "brandColor": "#1762a8",
-  "platforms": ["local", "cloud"],
+  "platforms": ["local"],
   "name": {
     "en": "Swedish Police News",
     "sv": "Polisnytt"
