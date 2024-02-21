@@ -1,0 +1,2621 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "se.hiddenvillage.polisnytt",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "Polisnytt",
+    "sv": "Polisnytt"
+  },
+  "description": {
+    "en": "Gets information about recent events from the Swedish Police"
+  },
+  "category": [
+    "internet"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Christian Alares",
+    "email": "christian@hiddenvillage.se"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "an-event-occured",
+        "title": {
+          "en": "An event occured"
+        },
+        "tokens": [
+          {
+            "type": "string",
+            "name": "datetime",
+            "title": {
+              "en": "Date"
+            },
+            "example": {
+              "en": "2024-02-20 16:01:49 +01:00"
+            }
+          },
+          {
+            "type": "string",
+            "name": "name",
+            "title": {
+              "en": "Name"
+            },
+            "example": {
+              "en": "20 februari 14.14, Brand, Timrå"
+            }
+          },
+          {
+            "type": "string",
+            "name": "summary",
+            "title": {
+              "en": "Summary"
+            },
+            "example": {
+              "en": "Trafikolycka på Södermalm."
+            }
+          },
+          {
+            "type": "string",
+            "name": "type",
+            "title": {
+              "en": "Type"
+            },
+            "example": {
+              "en": "Trafikbrott"
+            }
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=polisnytt-device"
+          }
+        ]
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Polisnytt API Device"
+      },
+      "class": "other",
+      "capabilities": [],
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [],
+      "images": {
+        "small": "/drivers/polisnytt-device/assets/images/small.png",
+        "large": "/drivers/polisnytt-device/assets/images/large.png",
+        "xlarge": "/drivers/polisnytt-device/assets/images/xlarge.png"
+      },
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "id": "polisnytt-device",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Locations"
+          },
+          "children": [
+            {
+              "id": "Ale",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ale"
+              }
+            },
+            {
+              "id": "Alingsås",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Alingsås"
+              }
+            },
+            {
+              "id": "Älmhult",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Älmhult"
+              }
+            },
+            {
+              "id": "Älvdalen",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Älvdalen"
+              }
+            },
+            {
+              "id": "Alvesta",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Alvesta"
+              }
+            },
+            {
+              "id": "Älvkarleby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Älvkarleby"
+              }
+            },
+            {
+              "id": "Älvsbyn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Älvsbyn"
+              }
+            },
+            {
+              "id": "Åmål",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Åmål"
+              }
+            },
+            {
+              "id": "Aneby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Aneby"
+              }
+            },
+            {
+              "id": "Ånge",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ånge"
+              }
+            },
+            {
+              "id": "Ängelholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ängelholm"
+              }
+            },
+            {
+              "id": "Arboga",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Arboga"
+              }
+            },
+            {
+              "id": "Åre",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Åre"
+              }
+            },
+            {
+              "id": "Årjäng",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Årjäng"
+              }
+            },
+            {
+              "id": "Arjeplog",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Arjeplog"
+              }
+            },
+            {
+              "id": "Arvidsjaur",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Arvidsjaur"
+              }
+            },
+            {
+              "id": "Arvika",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Arvika"
+              }
+            },
+            {
+              "id": "Åsele",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Åsele"
+              }
+            },
+            {
+              "id": "Askersund",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Askersund"
+              }
+            },
+            {
+              "id": "Åstorp",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Åstorp"
+              }
+            },
+            {
+              "id": "Åtvidaberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Åtvidaberg"
+              }
+            },
+            {
+              "id": "Avesta",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Avesta"
+              }
+            },
+            {
+              "id": "Båstad",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Båstad"
+              }
+            },
+            {
+              "id": "Bengtsfors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Bengtsfors"
+              }
+            },
+            {
+              "id": "Berg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Berg"
+              }
+            },
+            {
+              "id": "Bjurholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Bjurholm"
+              }
+            },
+            {
+              "id": "Bjuv",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Bjuv"
+              }
+            },
+            {
+              "id": "Blekinge län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Blekinge län"
+              }
+            },
+            {
+              "id": "Boden",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Boden"
+              }
+            },
+            {
+              "id": "Bollebygd",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Bollebygd"
+              }
+            },
+            {
+              "id": "Bollnäs",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Bollnäs"
+              }
+            },
+            {
+              "id": "Borås",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Borås"
+              }
+            },
+            {
+              "id": "Borgholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Borgholm"
+              }
+            },
+            {
+              "id": "Borlänge",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Borlänge"
+              }
+            },
+            {
+              "id": "Botkyrka",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Botkyrka"
+              }
+            },
+            {
+              "id": "Boxholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Boxholm"
+              }
+            },
+            {
+              "id": "Bräcke",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Bräcke"
+              }
+            },
+            {
+              "id": "Bromölla",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Bromölla"
+              }
+            },
+            {
+              "id": "Burlöv",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Burlöv"
+              }
+            },
+            {
+              "id": "Dalarnas län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Dalarnas län"
+              }
+            },
+            {
+              "id": "Dals-ed",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Dals-ed"
+              }
+            },
+            {
+              "id": "Danderyd",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Danderyd"
+              }
+            },
+            {
+              "id": "Degerfors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Degerfors"
+              }
+            },
+            {
+              "id": "Dorotea",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Dorotea"
+              }
+            },
+            {
+              "id": "Eda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Eda"
+              }
+            },
+            {
+              "id": "Ekerö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ekerö"
+              }
+            },
+            {
+              "id": "Eksjö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Eksjö"
+              }
+            },
+            {
+              "id": "Emmaboda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Emmaboda"
+              }
+            },
+            {
+              "id": "Enköping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Enköping"
+              }
+            },
+            {
+              "id": "Eskilstuna",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Eskilstuna"
+              }
+            },
+            {
+              "id": "Eslöv",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Eslöv"
+              }
+            },
+            {
+              "id": "Essunga",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Essunga"
+              }
+            },
+            {
+              "id": "Fagersta",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Fagersta"
+              }
+            },
+            {
+              "id": "Falkenberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Falkenberg"
+              }
+            },
+            {
+              "id": "Falköping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Falköping"
+              }
+            },
+            {
+              "id": "Falun",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Falun"
+              }
+            },
+            {
+              "id": "Färgelanda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Färgelanda"
+              }
+            },
+            {
+              "id": "Filipstad",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Filipstad"
+              }
+            },
+            {
+              "id": "Finspång",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Finspång"
+              }
+            },
+            {
+              "id": "Flen",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Flen"
+              }
+            },
+            {
+              "id": "Forshaga",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Forshaga"
+              }
+            },
+            {
+              "id": "Gagnef",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gagnef"
+              }
+            },
+            {
+              "id": "Gällivare",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gällivare"
+              }
+            },
+            {
+              "id": "Gävle",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gävle"
+              }
+            },
+            {
+              "id": "Gävleborgs län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gävleborgs län"
+              }
+            },
+            {
+              "id": "Gislaved",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gislaved"
+              }
+            },
+            {
+              "id": "Gnesta",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gnesta"
+              }
+            },
+            {
+              "id": "Gnosjö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gnosjö"
+              }
+            },
+            {
+              "id": "Göteborg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Göteborg"
+              }
+            },
+            {
+              "id": "Götene",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Götene"
+              }
+            },
+            {
+              "id": "Gotland",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gotland"
+              }
+            },
+            {
+              "id": "Gotlands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gotlands län"
+              }
+            },
+            {
+              "id": "Grästorp",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Grästorp"
+              }
+            },
+            {
+              "id": "Grums",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Grums"
+              }
+            },
+            {
+              "id": "Gullspång",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Gullspång"
+              }
+            },
+            {
+              "id": "Habo",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Habo"
+              }
+            },
+            {
+              "id": "Håbo",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Håbo"
+              }
+            },
+            {
+              "id": "Hagfors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hagfors"
+              }
+            },
+            {
+              "id": "Hallands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hallands län"
+              }
+            },
+            {
+              "id": "Hällefors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hällefors"
+              }
+            },
+            {
+              "id": "Hallsberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hallsberg"
+              }
+            },
+            {
+              "id": "Hallstahammar",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hallstahammar"
+              }
+            },
+            {
+              "id": "Halmstad",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Halmstad"
+              }
+            },
+            {
+              "id": "Hammarö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hammarö"
+              }
+            },
+            {
+              "id": "Haninge",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Haninge"
+              }
+            },
+            {
+              "id": "Haparanda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Haparanda"
+              }
+            },
+            {
+              "id": "Härjedalen",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Härjedalen"
+              }
+            },
+            {
+              "id": "Härnösand",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Härnösand"
+              }
+            },
+            {
+              "id": "Härryda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Härryda"
+              }
+            },
+            {
+              "id": "Hässleholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hässleholm"
+              }
+            },
+            {
+              "id": "Heby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Heby"
+              }
+            },
+            {
+              "id": "Hedemora",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hedemora"
+              }
+            },
+            {
+              "id": "Helsingborg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Helsingborg"
+              }
+            },
+            {
+              "id": "Herrljunga",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Herrljunga"
+              }
+            },
+            {
+              "id": "Hjo",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hjo"
+              }
+            },
+            {
+              "id": "Hofors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hofors"
+              }
+            },
+            {
+              "id": "Höganäs",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Höganäs"
+              }
+            },
+            {
+              "id": "Högsby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Högsby"
+              }
+            },
+            {
+              "id": "Höör",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Höör"
+              }
+            },
+            {
+              "id": "Hörby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hörby"
+              }
+            },
+            {
+              "id": "Huddinge",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Huddinge"
+              }
+            },
+            {
+              "id": "Hudiksvall",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hudiksvall"
+              }
+            },
+            {
+              "id": "Hultsfred",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hultsfred"
+              }
+            },
+            {
+              "id": "Hylte",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Hylte"
+              }
+            },
+            {
+              "id": "Jämtlands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Jämtlands län"
+              }
+            },
+            {
+              "id": "Järfälla",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Järfälla"
+              }
+            },
+            {
+              "id": "Jokkmokk",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Jokkmokk"
+              }
+            },
+            {
+              "id": "Jönköping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Jönköping"
+              }
+            },
+            {
+              "id": "Jönköpings län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Jönköpings län"
+              }
+            },
+            {
+              "id": "Kalix",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kalix"
+              }
+            },
+            {
+              "id": "Kalmar",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kalmar"
+              }
+            },
+            {
+              "id": "Kalmar län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kalmar län"
+              }
+            },
+            {
+              "id": "Karlsborg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Karlsborg"
+              }
+            },
+            {
+              "id": "Karlshamn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Karlshamn"
+              }
+            },
+            {
+              "id": "Karlskoga",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Karlskoga"
+              }
+            },
+            {
+              "id": "Karlskrona",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Karlskrona"
+              }
+            },
+            {
+              "id": "Karlstad",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Karlstad"
+              }
+            },
+            {
+              "id": "Katrineholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Katrineholm"
+              }
+            },
+            {
+              "id": "Kävlinge",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kävlinge"
+              }
+            },
+            {
+              "id": "Kil",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kil"
+              }
+            },
+            {
+              "id": "Kinda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kinda"
+              }
+            },
+            {
+              "id": "Kiruna",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kiruna"
+              }
+            },
+            {
+              "id": "Klippan",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Klippan"
+              }
+            },
+            {
+              "id": "Knivsta",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Knivsta"
+              }
+            },
+            {
+              "id": "Köping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Köping"
+              }
+            },
+            {
+              "id": "Kramfors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kramfors"
+              }
+            },
+            {
+              "id": "Kristianstad",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kristianstad"
+              }
+            },
+            {
+              "id": "Kristinehamn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kristinehamn"
+              }
+            },
+            {
+              "id": "Krokom",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Krokom"
+              }
+            },
+            {
+              "id": "Kronobergs län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kronobergs län"
+              }
+            },
+            {
+              "id": "Kumla",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kumla"
+              }
+            },
+            {
+              "id": "Kungälv",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kungälv"
+              }
+            },
+            {
+              "id": "Kungsbacka",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kungsbacka"
+              }
+            },
+            {
+              "id": "Kungsör",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Kungsör"
+              }
+            },
+            {
+              "id": "Laholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Laholm"
+              }
+            },
+            {
+              "id": "Landskrona",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Landskrona"
+              }
+            },
+            {
+              "id": "Laxå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Laxå"
+              }
+            },
+            {
+              "id": "Lekeberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lekeberg"
+              }
+            },
+            {
+              "id": "Leksand",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Leksand"
+              }
+            },
+            {
+              "id": "Lerum",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lerum"
+              }
+            },
+            {
+              "id": "Lessebo",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lessebo"
+              }
+            },
+            {
+              "id": "Lidingö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lidingö"
+              }
+            },
+            {
+              "id": "Lidköping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lidköping"
+              }
+            },
+            {
+              "id": "Lilla edet",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lilla edet"
+              }
+            },
+            {
+              "id": "Lindesberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lindesberg"
+              }
+            },
+            {
+              "id": "Linköping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Linköping"
+              }
+            },
+            {
+              "id": "Ljungby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ljungby"
+              }
+            },
+            {
+              "id": "Ljusdal",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ljusdal"
+              }
+            },
+            {
+              "id": "Ljusnarsberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ljusnarsberg"
+              }
+            },
+            {
+              "id": "Lomma",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lomma"
+              }
+            },
+            {
+              "id": "Ludvika",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ludvika"
+              }
+            },
+            {
+              "id": "Luleå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Luleå"
+              }
+            },
+            {
+              "id": "Lund",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lund"
+              }
+            },
+            {
+              "id": "Lycksele",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lycksele"
+              }
+            },
+            {
+              "id": "Lysekil",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Lysekil"
+              }
+            },
+            {
+              "id": "Malå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Malå"
+              }
+            },
+            {
+              "id": "Malmö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Malmö"
+              }
+            },
+            {
+              "id": "Malung-Sälen",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Malung-Sälen"
+              }
+            },
+            {
+              "id": "Mariestad",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mariestad"
+              }
+            },
+            {
+              "id": "Mark",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mark"
+              }
+            },
+            {
+              "id": "Markaryd",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Markaryd"
+              }
+            },
+            {
+              "id": "Mellerud",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mellerud"
+              }
+            },
+            {
+              "id": "Mjölby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mjölby"
+              }
+            },
+            {
+              "id": "Mölndal",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mölndal"
+              }
+            },
+            {
+              "id": "Mönsterås",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mönsterås"
+              }
+            },
+            {
+              "id": "Mora",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mora"
+              }
+            },
+            {
+              "id": "Mörbylånga",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mörbylånga"
+              }
+            },
+            {
+              "id": "Motala",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Motala"
+              }
+            },
+            {
+              "id": "Mullsjö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Mullsjö"
+              }
+            },
+            {
+              "id": "Munkedal",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Munkedal"
+              }
+            },
+            {
+              "id": "Munkfors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Munkfors"
+              }
+            },
+            {
+              "id": "Nacka",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nacka"
+              }
+            },
+            {
+              "id": "Nässjö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nässjö"
+              }
+            },
+            {
+              "id": "Nora",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nora"
+              }
+            },
+            {
+              "id": "Norberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Norberg"
+              }
+            },
+            {
+              "id": "Nordanstig",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nordanstig"
+              }
+            },
+            {
+              "id": "Nordmaling",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nordmaling"
+              }
+            },
+            {
+              "id": "Norrbottens län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Norrbottens län"
+              }
+            },
+            {
+              "id": "Norrköping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Norrköping"
+              }
+            },
+            {
+              "id": "Norrtälje",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Norrtälje"
+              }
+            },
+            {
+              "id": "Norsjö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Norsjö"
+              }
+            },
+            {
+              "id": "Nybro",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nybro"
+              }
+            },
+            {
+              "id": "Nyköping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nyköping"
+              }
+            },
+            {
+              "id": "Nykvarn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nykvarn"
+              }
+            },
+            {
+              "id": "Nynäshamn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Nynäshamn"
+              }
+            },
+            {
+              "id": "Ockelbo",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ockelbo"
+              }
+            },
+            {
+              "id": "Öckerö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Öckerö"
+              }
+            },
+            {
+              "id": "Ödeshög",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ödeshög"
+              }
+            },
+            {
+              "id": "Olofström",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Olofström"
+              }
+            },
+            {
+              "id": "Örebro",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Örebro"
+              }
+            },
+            {
+              "id": "Örebro län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Örebro län"
+              }
+            },
+            {
+              "id": "Örkelljunga",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Örkelljunga"
+              }
+            },
+            {
+              "id": "Örnsköldsvik",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Örnsköldsvik"
+              }
+            },
+            {
+              "id": "Orsa",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Orsa"
+              }
+            },
+            {
+              "id": "Orust",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Orust"
+              }
+            },
+            {
+              "id": "Osby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Osby"
+              }
+            },
+            {
+              "id": "Oskarshamn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Oskarshamn"
+              }
+            },
+            {
+              "id": "Österåker",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Österåker"
+              }
+            },
+            {
+              "id": "Östergötlands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Östergötlands län"
+              }
+            },
+            {
+              "id": "Östersund",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Östersund"
+              }
+            },
+            {
+              "id": "Östhammar",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Östhammar"
+              }
+            },
+            {
+              "id": "Östra göinge",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Östra göinge"
+              }
+            },
+            {
+              "id": "Ovanåker",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ovanåker"
+              }
+            },
+            {
+              "id": "Överkalix",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Överkalix"
+              }
+            },
+            {
+              "id": "Övertorneå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Övertorneå"
+              }
+            },
+            {
+              "id": "Oxelösund",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Oxelösund"
+              }
+            },
+            {
+              "id": "Pajala",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Pajala"
+              }
+            },
+            {
+              "id": "Partille",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Partille"
+              }
+            },
+            {
+              "id": "Perstorp",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Perstorp"
+              }
+            },
+            {
+              "id": "Piteå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Piteå"
+              }
+            },
+            {
+              "id": "Ragunda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ragunda"
+              }
+            },
+            {
+              "id": "Rättvik",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Rättvik"
+              }
+            },
+            {
+              "id": "Robertsfors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Robertsfors"
+              }
+            },
+            {
+              "id": "Ronneby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ronneby"
+              }
+            },
+            {
+              "id": "Säffle",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Säffle"
+              }
+            },
+            {
+              "id": "Sala",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sala"
+              }
+            },
+            {
+              "id": "Salem",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Salem"
+              }
+            },
+            {
+              "id": "Sandviken",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sandviken"
+              }
+            },
+            {
+              "id": "Säter",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Säter"
+              }
+            },
+            {
+              "id": "Sävsjö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sävsjö"
+              }
+            },
+            {
+              "id": "Sigtuna",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sigtuna"
+              }
+            },
+            {
+              "id": "Simrishamn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Simrishamn"
+              }
+            },
+            {
+              "id": "Sjöbo",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sjöbo"
+              }
+            },
+            {
+              "id": "Skåne län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Skåne län"
+              }
+            },
+            {
+              "id": "Skara",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Skara"
+              }
+            },
+            {
+              "id": "Skellefteå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Skellefteå"
+              }
+            },
+            {
+              "id": "Skinnskatteberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Skinnskatteberg"
+              }
+            },
+            {
+              "id": "Skövde",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Skövde"
+              }
+            },
+            {
+              "id": "Skurup",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Skurup"
+              }
+            },
+            {
+              "id": "Smedjebacken",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Smedjebacken"
+              }
+            },
+            {
+              "id": "Söderhamn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Söderhamn"
+              }
+            },
+            {
+              "id": "Söderköping",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Söderköping"
+              }
+            },
+            {
+              "id": "Södermanlands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Södermanlands län"
+              }
+            },
+            {
+              "id": "Södertälje",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Södertälje"
+              }
+            },
+            {
+              "id": "Sollefteå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sollefteå"
+              }
+            },
+            {
+              "id": "Sollentuna",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sollentuna"
+              }
+            },
+            {
+              "id": "Solna",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Solna"
+              }
+            },
+            {
+              "id": "Sölvesborg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sölvesborg"
+              }
+            },
+            {
+              "id": "Sorsele",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sorsele"
+              }
+            },
+            {
+              "id": "Sotenäs",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sotenäs"
+              }
+            },
+            {
+              "id": "Staffanstorp",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Staffanstorp"
+              }
+            },
+            {
+              "id": "Stenungsund",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Stenungsund"
+              }
+            },
+            {
+              "id": "Stockholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Stockholm"
+              }
+            },
+            {
+              "id": "Stockholms län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Stockholms län"
+              }
+            },
+            {
+              "id": "Storfors",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Storfors"
+              }
+            },
+            {
+              "id": "Storuman",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Storuman"
+              }
+            },
+            {
+              "id": "Strängnäs",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Strängnäs"
+              }
+            },
+            {
+              "id": "Strömstad",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Strömstad"
+              }
+            },
+            {
+              "id": "Strömsund",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Strömsund"
+              }
+            },
+            {
+              "id": "Sundbyberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sundbyberg"
+              }
+            },
+            {
+              "id": "Sundsvall",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sundsvall"
+              }
+            },
+            {
+              "id": "Sunne",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Sunne"
+              }
+            },
+            {
+              "id": "Surahammar",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Surahammar"
+              }
+            },
+            {
+              "id": "Svalöv",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Svalöv"
+              }
+            },
+            {
+              "id": "Svedala",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Svedala"
+              }
+            },
+            {
+              "id": "Svenljunga",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Svenljunga"
+              }
+            },
+            {
+              "id": "Täby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Täby"
+              }
+            },
+            {
+              "id": "Tanum",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tanum"
+              }
+            },
+            {
+              "id": "Tibro",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tibro"
+              }
+            },
+            {
+              "id": "Tidaholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tidaholm"
+              }
+            },
+            {
+              "id": "Tierp",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tierp"
+              }
+            },
+            {
+              "id": "Timrå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Timrå"
+              }
+            },
+            {
+              "id": "Tingsryd",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tingsryd"
+              }
+            },
+            {
+              "id": "Tjörn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tjörn"
+              }
+            },
+            {
+              "id": "Tomelilla",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tomelilla"
+              }
+            },
+            {
+              "id": "Töreboda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Töreboda"
+              }
+            },
+            {
+              "id": "Torsås",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Torsås"
+              }
+            },
+            {
+              "id": "Torsby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Torsby"
+              }
+            },
+            {
+              "id": "Tranås",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tranås"
+              }
+            },
+            {
+              "id": "Tranemo",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tranemo"
+              }
+            },
+            {
+              "id": "Trelleborg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Trelleborg"
+              }
+            },
+            {
+              "id": "Trollhättan",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Trollhättan"
+              }
+            },
+            {
+              "id": "Trosa",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Trosa"
+              }
+            },
+            {
+              "id": "Tyresö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Tyresö"
+              }
+            },
+            {
+              "id": "Uddevalla",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Uddevalla"
+              }
+            },
+            {
+              "id": "Ulricehamn",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ulricehamn"
+              }
+            },
+            {
+              "id": "Umeå",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Umeå"
+              }
+            },
+            {
+              "id": "Upplands väsby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Upplands väsby"
+              }
+            },
+            {
+              "id": "Upplands-bro",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Upplands-bro"
+              }
+            },
+            {
+              "id": "Uppsala",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Uppsala"
+              }
+            },
+            {
+              "id": "Uppsala län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Uppsala län"
+              }
+            },
+            {
+              "id": "Uppvidinge",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Uppvidinge"
+              }
+            },
+            {
+              "id": "Vadstena",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vadstena"
+              }
+            },
+            {
+              "id": "Vaggeryd",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vaggeryd"
+              }
+            },
+            {
+              "id": "Valdemarsvik",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Valdemarsvik"
+              }
+            },
+            {
+              "id": "Vallentuna",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vallentuna"
+              }
+            },
+            {
+              "id": "Vänersborg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vänersborg"
+              }
+            },
+            {
+              "id": "Vännäs",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vännäs"
+              }
+            },
+            {
+              "id": "Vansbro",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vansbro"
+              }
+            },
+            {
+              "id": "Vara",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vara"
+              }
+            },
+            {
+              "id": "Varberg",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Varberg"
+              }
+            },
+            {
+              "id": "Vårgårda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vårgårda"
+              }
+            },
+            {
+              "id": "Värmdö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Värmdö"
+              }
+            },
+            {
+              "id": "Värmlands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Värmlands län"
+              }
+            },
+            {
+              "id": "Värnamo",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Värnamo"
+              }
+            },
+            {
+              "id": "Västerås",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Västerås"
+              }
+            },
+            {
+              "id": "Västerbottens län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Västerbottens län"
+              }
+            },
+            {
+              "id": "Västernorrlands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Västernorrlands län"
+              }
+            },
+            {
+              "id": "Västervik",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Västervik"
+              }
+            },
+            {
+              "id": "Västmanlands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Västmanlands län"
+              }
+            },
+            {
+              "id": "Västra Götalands län",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Västra Götalands län"
+              }
+            },
+            {
+              "id": "Vaxholm",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vaxholm"
+              }
+            },
+            {
+              "id": "Växjö",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Växjö"
+              }
+            },
+            {
+              "id": "Vellinge",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vellinge"
+              }
+            },
+            {
+              "id": "Vetlanda",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vetlanda"
+              }
+            },
+            {
+              "id": "Vilhelmina",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vilhelmina"
+              }
+            },
+            {
+              "id": "Vimmerby",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vimmerby"
+              }
+            },
+            {
+              "id": "Vindeln",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vindeln"
+              }
+            },
+            {
+              "id": "Vingåker",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Vingåker"
+              }
+            },
+            {
+              "id": "Ydre",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ydre"
+              }
+            },
+            {
+              "id": "Ystad",
+              "type": "checkbox",
+              "value": false,
+              "label": {
+                "en": "Ystad"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

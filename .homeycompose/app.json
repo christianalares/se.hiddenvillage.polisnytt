@@ -1,0 +1,26 @@
+{
+  "id": "se.hiddenvillage.polisnytt",
+  "version": "0.0.1",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "brandColor": "#1762a8",
+  "platforms": ["local", "cloud"],
+  "name": {
+    "en": "Swedish Police News",
+    "sv": "Polisnytt"
+  },
+  "description": {
+    "en": "Gets information about recent events from the Swedish Police"
+  },
+  "category": ["internet"],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Christian Alares",
+    "email": "christian@hiddenvillage.se"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "se.hiddenvillage.polisnytt",
+  "version": "0.0.1",
+  "main": "app.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "biome check .",
+    "check:types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@tsconfig/node16": "^16.1.1",
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.5",
+    "@types/node": "^20.11.19",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.7"
+  }
+}

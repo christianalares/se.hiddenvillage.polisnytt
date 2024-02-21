@@ -1,0 +1,52 @@
+{
+  "triggers": [
+    {
+      "id": "an-event-occured",
+      "title": {
+        "en": "An event occured"
+      },
+      "tokens": [
+        {
+          "type": "string",
+          "name": "datetime",
+          "title": {
+            "en": "Date"
+          },
+          "example": {
+            "en": "2024-02-20 16:01:49 +01:00"
+          }
+        },
+        {
+          "type": "string",
+          "name": "name",
+          "title": {
+            "en": "Name"
+          },
+          "example": {
+            "en": "20 februari 14.14, Brand, Timrå"
+          }
+        },
+        {
+          "type": "string",
+          "name": "summary",
+          "title": {
+            "en": "Summary"
+          },
+          "example": {
+            "en": "Trafikolycka på Södermalm."
+          }
+        },
+        {
+          "type": "string",
+          "name": "type",
+          "title": {
+            "en": "Type"
+          },
+          "example": {
+            "en": "Trafikbrott"
+          }
+        }
+      ]
+    }
+  ]
+}
