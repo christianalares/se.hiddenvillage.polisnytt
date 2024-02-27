@@ -1,5 +1,8 @@
 {
   "1.0.0": {
     "en": "Initial release"
+  },
+  "1.1.0": {
+    "en": "New tokens: URL, Location, Latitude and Longitude, Minor spelling corrections"
   }
 }
