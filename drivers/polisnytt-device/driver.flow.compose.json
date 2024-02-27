@@ -54,6 +54,18 @@
             "en": "Trafikbrott",
             "sv": "Trafikbrott"
           }
+        },
+        {
+          "type": "string",
+          "name": "url",
+          "title": {
+            "en": "URL",
+            "sv": "URL"
+          },
+          "example": {
+            "en": "https://polisen.se/aktuellt/handelser/2024/februari/20/20-februari-08.40-trafikbrott-stockholm/",
+            "sv": "https://polisen.se/aktuellt/handelser/2024/februari/20/20-februari-08.40-trafikbrott-stockholm/"
+          }
         }
       ]
     }

@@ -100,6 +100,17 @@ class PolisnyttApiDevice extends Homey.Device {
     const lastCachedEvent = this.cachedPoliceEvents?.[0]
     const lastFetchedEvent = results?.[0]
 
+    // Trigger the flow card if there are new events and we are in debug mode
+    if (process.env.DEBUG === '1' && lastFetchedEvent) {
+      this.newEventTriggerCard?.trigger(this, {
+        datetime: lastFetchedEvent.datetime,
+        name: lastFetchedEvent.name,
+        summary: lastFetchedEvent.summary,
+        type: lastFetchedEvent.type,
+        url: lastFetchedEvent.url,
+      })
+    }
+
     // Trigger the flow card if there are new events
     if (lastFetchedEvent && lastFetchedEvent.id !== lastCachedEvent?.id) {
       this.newEventTriggerCard
@@ -108,6 +119,7 @@ class PolisnyttApiDevice extends Homey.Device {
           name: lastFetchedEvent.name,
           summary: lastFetchedEvent.summary,
           type: lastFetchedEvent.type,
+          url: lastFetchedEvent.url,
         })
         .catch((err) => this.error('ERROR: newEventTriggerCard.trigger', err))
 
