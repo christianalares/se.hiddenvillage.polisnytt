@@ -94,6 +94,42 @@
           },
           {
             "type": "string",
+            "name": "location",
+            "title": {
+              "en": "Location",
+              "sv": "Plats"
+            },
+            "example": {
+              "en": "Stockholm",
+              "sv": "Stockholm"
+            }
+          },
+          {
+            "type": "number",
+            "name": "lat",
+            "title": {
+              "en": "Latitude",
+              "sv": "Latitud"
+            },
+            "example": {
+              "en": "59.329324",
+              "sv": "59.329324"
+            }
+          },
+          {
+            "type": "number",
+            "name": "lng",
+            "title": {
+              "en": "Longitude",
+              "sv": "Longitud"
+            },
+            "example": {
+              "en": "18.068581",
+              "sv": "18.068581"
+            }
+          },
+          {
+            "type": "string",
             "name": "url",
             "title": {
               "en": "URL",

@@ -1,6 +1,26 @@
 import axios from 'axios'
 import Homey from 'homey'
 
+type LatLng = {
+  lat: number
+  lng: number
+}
+
+// Response from the API
+type PoliceEventResponse = {
+  id: number
+  datetime: string
+  name: string
+  summary: string
+  url: string
+  type: string
+  location: {
+    name: string
+    gps: `${number},${number}`
+  }
+}
+
+// Our internal representation of the police event
 type PoliceEvent = {
   id: number
   datetime: string
@@ -8,6 +28,10 @@ type PoliceEvent = {
   summary: string
   url: string
   type: string
+  location: {
+    name: string
+    gps: LatLng
+  }
 }
 
 class PolisnyttApiDevice extends Homey.Device {
@@ -68,17 +92,28 @@ class PolisnyttApiDevice extends Homey.Device {
     return url.toString()
   }
 
-  getPoliceEvents = async () => {
+  getPoliceEvents = async (): Promise<PoliceEvent[] | undefined> => {
     this.log('getPoliceEvents')
 
     const url = this.getApiUrl()
 
     try {
-      const { data } = await axios.get<PoliceEvent[]>(url)
-      return data.map((event) => ({
-        ...event,
-        url: `https://polisen.se${event.url}`,
-      }))
+      const { data } = await axios.get<PoliceEventResponse[]>(url)
+      return data.map((event) => {
+        const [lat, lng] = event.location.gps.split(',')
+
+        return {
+          ...event,
+          url: `https://polisen.se${event.url}`,
+          location: {
+            name: event.location.name,
+            gps: {
+              lat: parseFloat(lat),
+              lng: parseFloat(lng),
+            },
+          },
+        }
+      })
     } catch (error) {
       this.error('Error fetching police events', error)
       return undefined
@@ -108,6 +143,9 @@ class PolisnyttApiDevice extends Homey.Device {
         summary: lastFetchedEvent.summary,
         type: lastFetchedEvent.type,
         url: lastFetchedEvent.url,
+        location: lastFetchedEvent.location.name,
+        lat: lastFetchedEvent.location.gps.lat,
+        lng: lastFetchedEvent.location.gps.lng,
       })
     }
 
@@ -120,6 +158,9 @@ class PolisnyttApiDevice extends Homey.Device {
           summary: lastFetchedEvent.summary,
           type: lastFetchedEvent.type,
           url: lastFetchedEvent.url,
+          location: lastFetchedEvent.location.name,
+          lat: lastFetchedEvent.location.gps.lat,
+          lng: lastFetchedEvent.location.gps.lng,
         })
         .catch((err) => this.error('ERROR: newEventTriggerCard.trigger', err))
 
