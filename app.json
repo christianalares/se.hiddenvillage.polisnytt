@@ -37,9 +37,9 @@
   "flow": {
     "triggers": [
       {
-        "id": "an-event-occured",
+        "id": "an-event-occurred",
         "title": {
-          "en": "An event occured",
+          "en": "An event occurred",
           "sv": "En händelse inträffade"
         },
         "tokens": [

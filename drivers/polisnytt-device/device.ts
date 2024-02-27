@@ -124,7 +124,7 @@ class PolisnyttApiDevice extends Homey.Device {
 
     await this.driver.ready()
 
-    this.newEventTriggerCard = this.homey.flow.getDeviceTriggerCard('an-event-occured')
+    this.newEventTriggerCard = this.homey.flow.getDeviceTriggerCard('an-event-occurred')
 
     const hasValidSettings = this.validateSettings()
 
