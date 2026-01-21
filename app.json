@@ -11,7 +11,9 @@
   "support": "https://github.com/christianalares/se.hiddenvillage.polisnytt",
   "source": "https://github.com/christianalares/se.hiddenvillage.polisnytt",
   "brandColor": "#1762a8",
-  "platforms": ["local"],
+  "platforms": [
+    "local"
+  ],
   "name": {
     "en": "Swedish Police News",
     "sv": "Polisnytt"
@@ -20,7 +22,9 @@
     "en": "Get recent events from the Swedish Police",
     "sv": "Få senaste händelser från Polisen"
   },
-  "category": ["internet"],
+  "category": [
+    "internet"
+  ],
   "permissions": [],
   "images": {
     "small": "/assets/images/small.png",
@@ -154,7 +158,9 @@
       },
       "class": "other",
       "capabilities": [],
-      "platforms": ["local"],
+      "platforms": [
+        "local"
+      ],
       "connectivity": [],
       "images": {
         "small": "/drivers/polisnytt-device/assets/images/small.png",
