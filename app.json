@@ -2,8 +2,8 @@
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "se.hiddenvillage.polisnytt",
   "homeyCommunityTopicId": 104631,
-  "version": "1.1.0",
-  "compatibility": ">=5.0.0",
+  "version": "1.2.0",
+  "compatibility": ">=12.3.0",
   "sdk": 3,
   "bugs": {
     "url": "https://github.com/christianalares/se.hiddenvillage.polisnytt/issues"
@@ -11,9 +11,7 @@
   "support": "https://github.com/christianalares/se.hiddenvillage.polisnytt",
   "source": "https://github.com/christianalares/se.hiddenvillage.polisnytt",
   "brandColor": "#1762a8",
-  "platforms": [
-    "local"
-  ],
+  "platforms": ["local"],
   "name": {
     "en": "Swedish Police News",
     "sv": "Polisnytt"
@@ -22,9 +20,7 @@
     "en": "Get recent events from the Swedish Police",
     "sv": "Få senaste händelser från Polisen"
   },
-  "category": [
-    "internet"
-  ],
+  "category": ["internet"],
   "permissions": [],
   "images": {
     "small": "/assets/images/small.png",
@@ -158,9 +154,7 @@
       },
       "class": "other",
       "capabilities": [],
-      "platforms": [
-        "local"
-      ],
+      "platforms": ["local"],
       "connectivity": [],
       "images": {
         "small": "/drivers/polisnytt-device/assets/images/small.png",
@@ -2992,5 +2986,49 @@
         }
       ]
     }
-  ]
+  ],
+  "widgets": {
+    "events": {
+      "name": {
+        "en": "Police Events",
+        "sv": "Polishändelser"
+      },
+      "settings": [
+        {
+          "id": "device",
+          "type": "autocomplete",
+          "title": {
+            "en": "Device",
+            "sv": "Enhet"
+          },
+          "hint": {
+            "en": "Select which Police Events device to use for locations",
+            "sv": "Välj vilken Polisnytt-enhet som ska användas för platser"
+          }
+        },
+        {
+          "id": "maxEvents",
+          "type": "number",
+          "title": {
+            "en": "Max events to show",
+            "sv": "Max antal händelser"
+          },
+          "hint": {
+            "en": "Number of events to display (1-10)",
+            "sv": "Antal händelser att visa (1-10)"
+          },
+          "value": 5,
+          "min": 1,
+          "max": 10
+        }
+      ],
+      "api": {
+        "getEvents": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "events"
+    }
+  }
 }

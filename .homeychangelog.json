@@ -4,5 +4,8 @@
   },
   "1.1.0": {
     "en": "New tokens: URL, Location, Latitude and Longitude, Minor spelling corrections"
+  },
+  "1.2.0": {
+    "en": "Added Dashboard Widget to display recent police events"
   }
 }

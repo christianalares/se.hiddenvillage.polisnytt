@@ -13,12 +13,14 @@ class PolisnyttApiDriver extends Homey.Driver {
    * This should return an array with the data of devices that are available for pairing.
    */
   async onPairListDevices() {
+    // Generate a unique ID for each new device
+    const uniqueId = `polisnytt-${Date.now()}-${Math.random().toString(36).substring(2, 9)}`
+
     return [
-      // Example device data, note that `store` is optional
       {
-        name: 'Polisnytt API Device',
+        name: 'Polisnytt',
         data: {
-          id: 'polisnytt-device-001',
+          id: uniqueId,
         },
       },
     ]

@@ -3,5 +3,15 @@
     "error": "Inga platser sparade i inställningar",
     "savedOk": "Inställningar uppdaterade.",
     "savedEmpty": "Inställningar uppdaterade. Observera att du behöver minst en plats sparad."
+  },
+  "widget": {
+    "loading": "Laddar...",
+    "noEvents": "Inga händelser just nu",
+    "noDeviceSelected": "Välj en enhet i widgetinställningar",
+    "noLocationsSelected": "Inga platser valda",
+    "moreLocations": "+__count__ till",
+    "error": "Kunde inte hämta händelser",
+    "minAgo": "__count__ min sedan",
+    "hoursAgo": "__count__ tim sedan"
   }
 }

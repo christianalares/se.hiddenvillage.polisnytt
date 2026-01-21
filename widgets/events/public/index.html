@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: transparent;
+        color: var(--homey-text-color, #333);
+        padding: var(--homey-su-2, 8px);
+        font-size: 13px;
+        line-height: 1.4;
+      }
+
+      .events-list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--homey-su-2, 8px);
+      }
+
+      .event {
+        background: var(--homey-background-color-light, rgba(0, 0, 0, 0.03));
+        border-radius: 8px;
+        padding: var(--homey-su-2, 8px);
+        cursor: pointer;
+        transition: background 0.15s ease;
+      }
+
+      .event:hover {
+        background: var(--homey-background-color-dark, rgba(0, 0, 0, 0.06));
+      }
+
+      .event-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 4px;
+      }
+
+      .event-location {
+        font-weight: 500;
+        flex: 1;
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .event-type {
+        font-size: 11px;
+        font-weight: 600;
+        color: #1762a8;
+        background: rgba(23, 98, 168, 0.1);
+        padding: 2px 6px;
+        border-radius: 4px;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .event-time {
+        font-size: 11px;
+        color: var(--homey-text-color-light, #666);
+      }
+
+      .event-summary {
+        font-size: 12px;
+        color: var(--homey-text-color-light, #666);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .loading, .error, .empty {
+        text-align: center;
+        padding: var(--homey-su-4, 16px);
+        color: var(--homey-text-color-light, #666);
+      }
+
+      .error {
+        color: #c0392b;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <div class="loading" data-i18n="widget.loading">Loading...</div>
+    </div>
+
+    <script>
+      function onHomeyReady(Homey) {
+        const settings = Homey.getSettings();
+        const maxEvents = settings.maxEvents || 5;
+        
+        // Get selected device ID from autocomplete setting (uses the device's location settings)
+        // The autocomplete setting returns an object with id, name, description
+        const deviceId = settings.device?.id || '';
+
+        // Translation helper - falls back to key if Homey.__ is not available
+        const __ = (key, tokens) => {
+          if (typeof Homey.__ === 'function') {
+            return Homey.__(key, tokens);
+          }
+          return key;
+        };
+
+        let calculatedHeight = 16; // padding
+
+        function parseDate(datetime) {
+          // Police API returns: "2024-02-20 10:41:41 +01:00"
+          // Safari is strict, so we need to convert to ISO format
+          // Replace space between date/time with "T" and remove space before timezone
+          const isoString = datetime
+            .replace(' ', 'T')           // "2024-02-20T10:41:41 +01:00"
+            .replace(' +', '+')          // "2024-02-20T10:41:41+01:00"
+            .replace(' -', '-');         // handle negative offsets too
+          return new Date(isoString);
+        }
+
+        function formatTime(datetime) {
+          const date = parseDate(datetime);
+          
+          // Check if date is valid
+          if (isNaN(date.getTime())) {
+            console.warn('Invalid date:', datetime);
+            return '';
+          }
+          
+          const now = new Date();
+          const diffMs = now - date;
+          const diffMins = Math.floor(diffMs / 60000);
+          const diffHours = Math.floor(diffMs / 3600000);
+          
+          if (diffMins < 60) {
+            return __('widget.minAgo', { count: diffMins });
+          } else if (diffHours < 24) {
+            return __('widget.hoursAgo', { count: diffHours });
+          } else {
+            return date.toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' });
+          }
+        }
+
+        function renderEvents(response) {
+          const content = document.getElementById('content');
+          
+          // Check if API returned an error (e.g., no device selected)
+          if (response && response.error === 'no_device_selected') {
+            content.innerHTML = '<div class="empty">' + __('widget.noDeviceSelected') + '</div>';
+            calculatedHeight = 100;
+            Homey.ready({ height: calculatedHeight });
+            return;
+          }
+
+          const events = Array.isArray(response) ? response : [];
+          
+          if (events.length === 0) {
+            content.innerHTML = '<div class="empty">' + __('widget.noEvents') + '</div>';
+            calculatedHeight = 100;
+            Homey.ready({ height: calculatedHeight });
+            return;
+          }
+
+          const html = events.map(event => `
+            <div class="event" data-url="${event.url}">
+              <div class="event-header">
+                <span class="event-location">${event.location}</span>
+                <span class="event-type">${event.type}</span>
+              </div>
+              <div class="event-summary"><span class="event-time">${formatTime(event.datetime)}</span> — ${event.summary}</div>
+            </div>
+          `).join('');
+
+          content.innerHTML = '<div class="events-list">' + html + '</div>';
+
+          // Calculate height based on number of events
+          calculatedHeight = 16 + (events.length * 80);
+          Homey.ready({ height: Math.min(calculatedHeight, 500) });
+
+          // Add click handlers to open URLs
+          document.querySelectorAll('.event').forEach(el => {
+            el.addEventListener('click', () => {
+              const url = el.getAttribute('data-url');
+              if (url) {
+                // Use Homey.popup for in-app browser, fallback to window.open for dev mode
+                if (typeof Homey.popup === 'function') {
+                  Homey.popup(url);
+                } else {
+                  window.open(url, '_blank');
+                }
+              }
+            });
+          });
+        }
+
+        function fetchEvents() {
+          const queryParams = new URLSearchParams({
+            maxEvents: String(maxEvents),
+            deviceId: deviceId
+          });
+
+          Homey.api('GET', '/?' + queryParams.toString())
+            .then(renderEvents)
+            .catch(err => {
+              console.error(err);
+              document.getElementById('content').innerHTML = 
+                '<div class="error">' + __('widget.error') + '</div>';
+              Homey.ready({ height: 100 });
+            });
+        }
+
+        // Initial fetch
+        fetchEvents();
+
+        // Refresh every 5 minutes
+        setInterval(fetchEvents, 5 * 60 * 1000);
+      }
+
+      // ============================================
+      // DEV MODE: For browser testing only
+      // Only activates when opened directly (file://) or localhost
+      // ============================================
+      (function initDevMode() {
+        const isDevMode = window.location.protocol === 'file:' || 
+                          window.location.hostname === 'localhost' ||
+                          window.location.hostname === '127.0.0.1';
+        
+        if (!isDevMode) {
+          return;
+        }
+
+        console.log('🛠️ DEV MODE - using mock Homey');
+        
+        // Add dev styling
+        document.body.style.background = '#f5f5f5';
+        document.body.style.maxWidth = '400px';
+        document.body.style.margin = '20px auto';
+        document.body.style.borderRadius = '12px';
+        document.body.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+        
+        // Mock translations (English for dev mode)
+        const mockTranslations = {
+          'widget.title': 'Police Events',
+          'widget.loading': 'Loading...',
+          'widget.noEvents': 'No events right now',
+          'widget.noDeviceSelected': 'Select a device in widget settings',
+          'widget.error': 'Could not fetch events',
+          'widget.refresh': 'Refresh',
+          'widget.minAgo': '__count__ min ago',
+          'widget.hoursAgo': '__count__ hours ago'
+        };
+
+        // Mock Homey object
+        const mockHomey = {
+          getSettings: () => ({ maxEvents: 5, device: { id: 'mock-device' } }),
+          getWidgetInstanceId: () => 'dev-instance',
+          ready: (opts) => console.log('Homey.ready:', opts),
+          __: (key, tokens) => {
+            let str = mockTranslations[key] || key;
+            if (tokens) {
+              Object.entries(tokens).forEach(([k, v]) => {
+                str = str.replace('__' + k + '__', v);
+              });
+            }
+            return str;
+          },
+          api: async () => {
+            const res = await fetch('https://polisen.se/api/events');
+            const data = await res.json();
+            return data.slice(0, 5).map(event => ({
+              id: event.id,
+              datetime: event.datetime,
+              name: event.name,
+              summary: event.summary,
+              type: event.type,
+              location: event.location.name,
+              url: 'https://polisen.se' + event.url,
+            }));
+          }
+        };
+        
+        // Initialize with mock
+        window.addEventListener('DOMContentLoaded', () => onHomeyReady(mockHomey));
+      })();
+    </script>
+  </body>
+</html>

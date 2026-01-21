@@ -3,5 +3,15 @@
     "error": "No locations selected in settings",
     "savedOk": "Settings updated.",
     "savedEmpty": "Settings saved. Note that you need at least one location selected."
+  },
+  "widget": {
+    "loading": "Loading...",
+    "noEvents": "No events right now",
+    "noDeviceSelected": "Select a device in widget settings",
+    "noLocationsSelected": "No locations selected",
+    "moreLocations": "+__count__ more",
+    "error": "Could not fetch events",
+    "minAgo": "__count__ min ago",
+    "hoursAgo": "__count__ hours ago"
   }
 }
